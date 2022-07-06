@@ -63,7 +63,7 @@ nav img{
 /*Scrool*/
 
 #devicespoint, #topbrandspoint, #soundspoint, #premiumpoint, #simcardpoint, #wrapperpoint {
-    scroll-margin-top: 88px;
+    scroll-margin-top: 90px;
 }
 
 /*Parallax*/
@@ -448,7 +448,8 @@ nav img{
     color: white;
     background-image: url("../img/1.jpg");
 
-    background-position: 0 -130px;
+    background-attachment: fixed;
+    background-position: 0 50px;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -476,7 +477,6 @@ nav img{
     font-size: 18px;
     border-radius: 0.5em;
     background-color: #00b26b;
-    text-align: center;
 }
 
 i{
@@ -574,3 +574,8 @@ animation: ching 5s linear infinite;
     82% { transform: scale(1.1) rotate(-1deg); }
     83% { transform: scale(1.0) rotate(0deg); }
 }
+
+
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */

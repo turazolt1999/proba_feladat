@@ -19,16 +19,14 @@ if (isset($_POST['submit'])) {
                 $fileNameNew = "header"."."."jpeg";
                 $fileDestination = 'uploads/'.$fileNameNew;
                 move_uploaded_file($fileTmpName, $fileDestination);
-                $message = "Sikeresen!";
-                echo "<script type='text/javascript'>alert('$message');</script>";
-                header("Location: index.php");
+                echo "<script>if(confirm('Sikeresen kep csere(elvileg)!')){document.location.href='index.php'};</script>";
             } else {
-                echo "Túl nagy a mérete";
+                echo "<script>if(confirm('Tul nagy a merete!')){document.location.href='admin.php'};</script>";
             }
         }else {
-            echo "Hiba a fáljban";
+            echo "<script>if(confirm('Hiba a faljban!')){document.location.href='admin.php'};</script>";
         }
     } else {
-        echo "Nem jó a fálj formátuma!";
+        echo "<script>if(confirm('Nem jo a falj formatuma!')){document.location.href='admin.php'};</script>";
     }
 }

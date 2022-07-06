@@ -25,9 +25,11 @@
         </ul>
     </div>
 </nav>
-<div class="container">
+<div class="admin_container">
+    <h1>Admin Felület</h1>
+    <h2>Tölts fel egy képet, amivel behelyetesítheted a "hero" szekció képét!</h2>
     <form action="upload.php" method="POST" enctype="multipart/form-data">
-        <input type="file" name="file" accept="image/png, image/jpeg">
+        <input type="file" name="file" accept="image/png, image/jpeg"><br>
         <button type="submit" name="submit" style="height: auto">
             Upload
         </button>

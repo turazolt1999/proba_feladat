@@ -27,7 +27,7 @@ if (isset($_POST['email'])) {
     $mail->setFrom('hsaproba@probaphp.fejlessz.hu');
     $mail->isHTML(true);
     $mail->addAttachment($_FILES['file']['tmp_name'], $_FILES['file']['name']);
-    $mail->Body = "<h1>$clientEmail</h1></br><p>$name</p</br><p>$radio1</p>";
+    $mail->Body = "<p>Email: $clientEmail</p><p>Név: $name</p><p>Választás: $radio1</p>";
     $mail->addAddress('turan.zoltan0614@gmail.com');
     if ( $mail->send() ) {
         $message = "Sikeresen elküldted!";
@@ -46,6 +46,7 @@ if (isset($_POST['email'])) {
     <title>Próba</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="img/icon.ico.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -60,6 +61,7 @@ if (isset($_POST['email'])) {
             <li><a href="#devicespoint">Készülékek</a></li>
             <li><a href="#topbrandspoint">Top márkák</a></li>
             <li><a href="#soundspoint">Ismerősen cseng?</a></li>
+            <li><a href="#wrapperpoint">Eredményeink</a></li>
             <li><a href="#premiumpoint">Prémium lehetőségek</a></li>
             <li><a href="#simcardpoint">SIM-kártya adatok</a></li>
         </ul>
@@ -134,6 +136,30 @@ if (isset($_POST['email'])) {
             <img id="phone" src="img/proba-phone.jpg">
         </div>
     </div>
+    <div class="counter" id="wrapperpoint">
+        <div class="caption5">
+            <div class="wrapper">
+                <i class="fas fa-user"></i>
+                <span class="num" data-val="320">000</span>
+                <p class="text">Alkalmazott</p>
+            </div>
+            <div class="wrapper">
+                <i class="fas fa-project-diagram"></i>
+                <span class="num" data-val="120+">000</span>
+                <p class="text">Partnercég</p>
+            </div>
+            <div class="wrapper">
+                <i class="fas fa-building"></i>
+                <span class="num" data-val="32">000</span>
+                <p class="text">Iroda Világszerte</p>
+            </div>
+            <div class="wrapper">
+                <i class="fas fa-server"></i>
+                <span class="num" data-val="150">000</span>
+                <p class="text">Kiépített Adatbázis</p>
+            </div>
+        </div>
+    </div>
     <div class="parallax2" id="premiumpoint">
         <div class="caption2">
             <div id="premium">
@@ -202,6 +228,7 @@ if (isset($_POST['email'])) {
     </div>
 </footer>
 </div>
+<script src="script.js"></script>
 <script>
     document.getElementById("parallaxid").style.backgroundImage = "url('uploads/header.jpeg')";
 </script>

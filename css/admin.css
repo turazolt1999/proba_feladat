@@ -1,3 +1,18 @@
-form {
+.admin_container {
     margin: 150px;
+}
+
+h2 {
+    padding-bottom: 25px ;
+}
+
+button {
+    margin-top: 10px;
+    background-color: #00b2a7;
+    border: #00b2a7;
+}
+
+button:hover {
+    background-color: white;
+    color: #00b2a7;
 }
