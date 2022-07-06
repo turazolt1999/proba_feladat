@@ -439,21 +439,19 @@ nav img{
 }
 
 #ching {
-    animation: ching 5s linear infinite;
+animation: ching 5s linear infinite;
 }
-
-@keyframes ching {
+@keyframes bzzt {
     0% { transform: scale(1.0) rotate(0deg); }
-    1% { transform: scale(1.1) rotate(-1deg); }
+    1% { transform: scale(1.1) rotate(1deg); }
     2% { transform: scale(1.1) rotate(1deg); }
     3% { transform: scale(1.1) rotate(0deg); }
-    4% { transform: scale(1.0) rotate(0deg); }
+    4% { transform: scale(1.1) rotate(0deg); }
+    5% { transform: scale(1.1) rotate(0deg); }
+    6% { transform: scale(1.1) rotate(1deg); }
+    7% { transform: scale(1.1) rotate(1deg); }
     8% { transform: scale(1.0) rotate(0deg); }
-    9% { transform: scale(1.1) rotate(-1deg); }
-    10% { transform: scale(1.1) rotate(1deg); }
-    11% { transform: scale(1.1) rotate(0deg); }
-    12% { transform: scale(1.1) rotate(-1deg); }
-    13% { transform: scale(1.0) rotate(0deg); }
+
 }
 
 @keyframes ring {
@@ -481,18 +479,21 @@ nav img{
     55% { transform: translate(0px, 0px) rotate(0deg); }
 }
 
-@keyframes bzzt {
+@keyframes ching {
     70% { transform: scale(1.0) rotate(0deg); }
-    71% { transform: scale(1.1) rotate(1deg); }
+    71% { transform: scale(1.1) rotate(-1deg); }
     72% { transform: scale(1.1) rotate(1deg); }
     73% { transform: scale(1.1) rotate(0deg); }
-    74% { transform: scale(1.1) rotate(0deg); }
-    75% { transform: scale(1.1) rotate(0deg); }
-    76% { transform: scale(1.1) rotate(1deg); }
-    77% { transform: scale(1.1) rotate(1deg); }
+    74% { transform: scale(1.0) rotate(0deg); }
     78% { transform: scale(1.0) rotate(0deg); }
-
+    79% { transform: scale(1.1) rotate(-1deg); }
+    80% { transform: scale(1.1) rotate(1deg); }
+    81% { transform: scale(1.1) rotate(0deg); }
+    82% { transform: scale(1.1) rotate(-1deg); }
+    83% { transform: scale(1.0) rotate(0deg); }
 }
+
+
 
 /*RESPONSIVE NAVBAR MENU STARTS*/
 /* CHECKBOX HACK */
