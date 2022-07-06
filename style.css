@@ -71,7 +71,7 @@ nav img{
 
 .parallax {
     background-image: url("img/proba-back-1.jpeg");
-    height: 100%;
+    height: 90%;
 
     background-attachment: fixed;
     background-position: center;
@@ -91,7 +91,7 @@ nav img{
 
 .caption {
     margin: 0 20%;
-    padding-top: 550px;
+    padding-top: 27%;
     width: auto;
     color: #000;
     height: auto;
@@ -390,6 +390,11 @@ nav img{
 #simcard form p{
     font-size: 16px;
     padding-bottom: 10px;
+}
+
+#simcard a{
+    text-decoration: none;
+    color: black;
 }
 
 /*again*/
