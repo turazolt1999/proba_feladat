@@ -28,7 +28,7 @@ if (isset($_POST['email'])) {
     $mail->isHTML(true);
     $mail->addAttachment($_FILES['file']['tmp_name'], $_FILES['file']['name']);
     $mail->Body = "<p>Email: $clientEmail</p><p>Név: $name</p><p>Választás: $radio1</p>";
-    $mail->addAddress('turan.zoltan0614@gmail.com');
+    $mail->addAddress('sarkany.roland@outclass.hu');
     if ( $mail->send() ) {
         $message = "Sikeresen elküldted!";
         echo "<script type='text/javascript'>alert('$message');</script>";
@@ -133,7 +133,7 @@ if (isset($_POST['email'])) {
             </div>
         </div>
         <div class="right_side2">
-            <img id="phone" src="img/proba-phone.jpg">
+            <img id="phone" src="img/proba-phone.jpg" alt>
         </div>
     </div>
     <div class="counter" id="wrapperpoint">
@@ -169,13 +169,13 @@ if (isset($_POST['email'])) {
         </div>
         <div class="row">
             <div class="column">
-                <img src="img/hsa-logo-white.svg">
+                <img src="img/hsa-logo-white.svg" alt>
             </div>
             <div class="column">
-                <img src="img/hsa-logo-white.svg">
+                <img src="img/hsa-logo-white.svg" alt>
             </div>
             <div class="column">
-                <img src="img/hsa-logo-white.svg">
+                <img src="img/hsa-logo-white.svg" alt>
             </div>
         </div>
     </div>
@@ -186,8 +186,8 @@ if (isset($_POST['email'])) {
                 <p>Számunkra fontos a segítséged.</p>
                 <form method="POST" enctype="multipart/form-data">
                     <div class="data">
-                        <input type="text" name="name" placeholder="Név"><br>
-                        <input type="email" name="majka" placeholder="Email cím"><br>
+                        <input type="text" name="name" placeholder="Név" required><br>
+                        <input type="email" name="majka" placeholder="Email cím" required><br>
                     </div>
                     <div class="radio">
                         <input type="radio"name="radio1" value="Standard" class="checkmark" checked="checked">
@@ -216,7 +216,7 @@ if (isset($_POST['email'])) {
             <table>
                 <tr>
                     <td>
-                        <h4>Adatkezelési tájékoztató</h4>
+                        <h4><a href="adat.php" style="text-decoration: none; color: white">Adatkezelési tájékoztató</a></h4>
                         <p>Copyright ©2022 Minden jog fenntartva</p>
                     </td>
                     <td>
