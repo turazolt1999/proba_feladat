@@ -1,4 +1,11 @@
 # proba_feladat
+
+A weboldal elérhető itt: http://probaphp.fejlessz.hu/
+A feladatot HTML, PHP, CSS, JS környezetben készítettem el.
+XAMPP Localhostját (htdocs) deployoltam.
+
+
+# proba_feladat
 Feladat:
 proba-landing-2022.png alapján weboldal elkészítése tetszőleges eszközökkel, keretrendszerekkel.
 
