@@ -71,7 +71,7 @@ nav img{
 
 .parallax {
     background-image: url("img/proba-back-1.jpeg");
-    height: 90%;
+    height: 95%;
 
     background-attachment: fixed;
     background-position: center;
@@ -91,7 +91,7 @@ nav img{
 
 .caption {
     margin: 0 20%;
-    padding-top: 27%;
+    padding-top: 30%;
     width: auto;
     color: #000;
     height: auto;
