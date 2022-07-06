@@ -1,7 +1,7 @@
 # proba_feladat
 
 A weboldal elérhető itt: http://probaphp.fejlessz.hu/<br>
-Admin felület: http://probaphp.fejlessz.hu/admin.php
+Admin felület: http://probaphp.fejlessz.hu/admin.php<br>
 A feladatot HTML, PHP, CSS, JS környezetben készítettem el.<br>
 XAMPP Localhostját (htdocs) deployoltam és a Nethely nevű webtárhelyre raktam fel.<br>
 
