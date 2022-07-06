@@ -1,77 +1,16 @@
+html {
+    scroll-behavior: smooth;
+}
 
 * {
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-
+    height: 100%;
+    box-sizing: border-box;
 }
 
 
-.menu {
-    background-color: #00b26b;
-    align-items: center;
-    display: flex;
-    height: 100px;
-    position: fixed;
-    width: 100%;
-    justify-content: center;
-
-}
-
-.menu li {
-    display: inline-block;
-    vertical-align: middle;
-    list-style: none;
-    text-align: center;
-    font-size: 18px;
-    padding: 25px;
-}
-
-.menu a{
-    text-decoration: none;
-    color: #ffffff;
-}
-
-
-.menu a:hover {
-    color: #00814e;
-}
-
-.logo img{
-    width: 130px;
-}
-
-.alap {
-    padding-left: 400px;
-    padding-right: 400px;
-    height: auto;
-}
-
-.hero {
-    padding-top: 450px;
-    height: auto;
-    color: white;
-}
-
-.hero h1{
-    font-size: 68px;
-    padding-bottom: 10px;
-    text-shadow: 1px 1px 2px #000000;
-}
-
-.hero p {
-    font-size: 20px;
-    text-shadow: 1px 1px 2px #000000;
-}
-
-.hero button {
-    background-color: #00b26b;
-    border: #00b26b;
-    margin-top: 40px;
+button {
     font-size: 18px;
     color: white;
     font-weight: bold;
@@ -81,21 +20,58 @@ nav {
     transition-duration: 0.4s;
 }
 
-.hero button:hover {
-    background-color: white;
-    color: #00b26b;
+/*Menu*/
+
+nav {
+    background-color: #00b26b;
+    align-items: center;
+    display: flex;
+    height: 90px;
+    position: fixed;
+    width: 100%;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
 }
 
-.inside {
-    padding: 300px 10px;
+nav .list {
+    height: auto;
 }
+
+nav li {
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+    padding: 25px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+nav a:hover {
+    color: #00814e;
+}
+
+nav img{
+    width: 130px;
+}
+
+/*Scrool*/
+
+#devicespoint, #topbrandspoint, #soundspoint, #premiumpoint, #simcardpoint {
+    scroll-margin-top: 90px;
+}
+
+/*Parallax*/
 
 .parallax {
     background-image: url("img/proba-back-1.jpeg");
-    width: 100%;
-    height: 850px;
-    object-fit: cover;
-    object-position: 100% 60%;
+    height: 100%;
 
     background-attachment: fixed;
     background-position: center;
@@ -103,95 +79,420 @@ nav {
     background-size: cover;
 }
 
-.keszulekek {
-    width: 50%;
-    height: 370px;
-    float: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.parallax2 {
+    background-image: url("img/proba-back-2.jpeg");
+    height: 650px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.keszulekek table {
-    margin-top: 25px;
-    float: left;
+.caption {
+    margin: 0 20%;
+    padding-top: 550px;
+    width: auto;
+    color: #000;
+    height: auto;
+}
+.caption2 {
+    margin: 0 20%;
+    padding-top: 200px;
+    width: auto;
+    color: white;
+    height: auto;
 }
 
-.keszulekek caption {
-    margin: 20px 0 30px 0;
+.caption3 {
+    margin: 0 20%;
+    padding: 70px 0;
+    width: auto;
+    color: #000000;
+    height: auto;
 }
 
-.keszulekek tr {
-    transition: .3s ease;
+.caption div#hero {
+    height: auto;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
 }
 
-.keszulekek tr:hover {
-    transform: scale(0.9);
-
-}
-
-.keszulekek td {
-    padding: 0 15px 15px 0;
-    text-align: left;
+.caption2 div#premium {
+    height: auto;
+    color: #fff;
+    padding: 18px;
     font-size: 20px;
 }
 
-.keszulekek img {
+/*Pémium lehetőségek*/
+
+#premium h1 {
+    padding-bottom: 5px;
+}
+
+#premium p {
+    font-size: 30px;
+}
+
+#premium img {
     height: 60px;
 }
 
-.keszulekek h1 {
-    font-size: 30px;
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
 }
 
-.top_markak h1 {
-    font-size: 30px;
+.column img {
+    height: 130px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.top_markak {
-    float: right;
-    width: 50%;
-    height: 370px;
-    background-color: #171b31;
-    color: white;
+.row {
     display: flex;
-    justify-content: center;
+    height: auto;
+    margin: 0 250px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*Hero*/
+
+#hero h1 {
+    font-size: 68px;
+    text-shadow: 1px 1px 2px #000000;
+    padding-bottom: 5px;
+}
+
+#hero p {
+    font-size: 20px;
+    text-shadow: 1px 1px 2px #000000;
+    padding-bottom: 40px;
+}
+
+#hero button {
+    background-color: #00b26b;
+    border: #00b26b;
+}
+
+#hero button:hover {
+    background-color: white;
+    color: #00b26b;
+}
+
+/*Boothside*/
+
+.boothside {
+    display: inline-flex;
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+.left_side, .right_side, .left_side2, .right_side2 {
+    width: 50%;
+    height: 420px;
+}
+
+.caption_left {
+    margin-left: 42%;
+    width: auto;
+    color: #000;
+    height: auto;
+    margin-top: 63px;
+    margin-bottom: 60px;
+}
+
+.caption_right {
+    margin-right: 42%;
+    width: auto;
+    color: #000;
+    height: auto;
+    margin-top: 63px;
+    margin-bottom: 60px;
+}
+
+.left_side {
+    float: left;
+    background-color: white;
+}
+
+.left_side2 {
+    float: left;
+    background-color: #00b26b;
     align-items: center;
-
-
-    position: relative;
 }
 
-.top_markak div {
-    display: inline-block;
+.left_side2 {
+    float: left;
+    background-color: #00b26b;
+    align-items: center;
 }
 
-.top_markak button {
+.right_side {
+    float: right;
+    background-color: #171b31;
+    text-align: right;
+}
+
+.right_side2 {
+    float: right;
+}
+
+/*Készülékek*/
+
+#devices img {
+    height: 60px;
+}
+
+#devices table{
+    padding-top: 10px;
+}
+
+#devices table td{
+    padding: 5px 3px 5px 0;
+    font-size: 20px;
+}
+
+#devices table tr td{
+    padding-top: 10px;
+    padding-right: 10px;;
+}
+
+#devices table tr {
+    transition: .3s ease;
+}
+
+#devices table tr:hover {
+    transform: scale(0.9);
+}
+
+/*Top Márkák*/
+
+#topbrands {
+    color: white;
+}
+
+#topbrands ul {
+    padding: 35px 0;
+}
+
+#topbrands li {
+    display: inline;
+    font-size: 14px;
+}
+
+#topbrands li::before {
+    padding: 0 10px;
+    content: " · ";
+    color: #00b26b;
+}
+
+#topbrands li:hover::before {
+    color: #ffffff;
+}
+
+#topbrands button {
     background-color: #171b31;
     border: 2px solid #ffffff;
-    font-size: 18px;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 10px 35px;
-    border-radius: 8px;
-    transition-duration: 0.4s;
 }
 
-.top_markak button:hover {
+#topbrands button:hover {
     background-color: #ffffff;
     color: #171b31;
 }
 
+/*Ismerősen cseng*/
 
-.top_markak ul {
-    list-style-type: circle;
+#sounds {
+    padding-top: 20px;
+    color: white;
+}
+
+#sounds p {
+    line-height: 35px;
+    font-size: 20px;
+}
+
+#sounds h1 {
+    padding-top: 10px;
+}
+
+/*Telefon*/
+
+#phone {
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 55%;
+}
+
+
+/*Sim-kártya adatok*/
+
+.white_background {
+    height: auto;
+}
+
+#simcard p{
+    font-size: 17px;
+}
+
+.name, .radio{
     display: flex;
-    padding: 10px 30px;
-    position: absolute;
+    flex-flow: row wrap;
+    align-items: center;
+    margin: 25px 0;
 }
 
-.top_markak li {
-    padding: 10px 30px;
-    position: absolute;
+.name input {
+    vertical-align: middle;
+    margin: 5px 60px 5px 0;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 350px;
 }
+
+.radio label{
+    padding-left: 17px;
+    padding-right: 40px;;
+}
+
+.file {
+    margin: 25px 0;
+    line-height: 25px;
+}
+
+#simcard {
+    padding: 18px;
+}
+
+#simcard button {
+    background-color: #00b26b;
+    border: #00b26b;
+}
+
+#simcard button:hover {
+    background-color: white;
+    color: #00b26b;
+}
+
+#simcard form p{
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+/*again*/
+.blue_background {
+    background-color: #171b31;
+    height: auto;
+    color: white;
+    display: flex;
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.blue_background img {
+    width: 130px;
+}
+
+#ready {
+    margin-left: 25%;
+}
+
+#ready table {
+    height: auto;
+}
+
+#ready button {
+    padding: 10px 25px;
+    margin-left: 10px;
+    background-color: #00b26b;
+    border: #00b26b;
+}
+
+#ready button:hover {
+    background-color: white;
+    color: #00b26b;
+}
+
+
+/*Animációk*/
+#bzzt {
+    animation: bzzt 5s linear infinite;
+}
+
+#ring {
+    animation: ring 5s linear infinite;
+}
+
+#ching {
+    animation: ching 5s linear infinite;
+}
+
+@keyframes ching {
+    0% { transform: scale(1.0) rotate(0deg); }
+    1% { transform: scale(1.1) rotate(-1deg); }
+    2% { transform: scale(1.1) rotate(1deg); }
+    3% { transform: scale(1.1) rotate(0deg); }
+    4% { transform: scale(1.0) rotate(0deg); }
+    8% { transform: scale(1.0) rotate(0deg); }
+    9% { transform: scale(1.1) rotate(-1deg); }
+    10% { transform: scale(1.1) rotate(1deg); }
+    11% { transform: scale(1.1) rotate(0deg); }
+    12% { transform: scale(1.1) rotate(-1deg); }
+    13% { transform: scale(1.0) rotate(0deg); }
+}
+
+@keyframes ring {
+    34% { transform: translate(0px, 0px) rotate(0deg); }
+    35% { transform: translate(-1px, -1px) rotate(-1deg); }
+    36% { transform: translate(-1px, 0px) rotate(1deg); }
+    37% { transform: translate(1px, 1px) rotate(0deg); }
+    38% { transform: translate(1px, -1px) rotate(1deg); }
+    39% { transform: translate(-1px, 2px) rotate(-1deg); }
+    40% { transform: translate(-1px, 1px) rotate(0deg); }
+    41% { transform: translate(1px, 1px) rotate(-1deg); }
+    42% { transform: translate(-1px, -1px) rotate(1deg); }
+    43% { transform: translate(1px, 1px) rotate(0deg); }
+    44% { transform: translate(1px, -1px) rotate(-1deg); }
+    45% { transform: translate(-1px, -1px) rotate(-1deg); }
+    46% { transform: translate(-1px, 0px) rotate(1deg); }
+    47% { transform: translate(1px, 1px) rotate(0deg); }
+    48% { transform: translate(1px, -1px) rotate(1deg); }
+    49% { transform: translate(-1px, 1px) rotate(-1deg); }
+    50% { transform: translate(-1px, 1px) rotate(0deg); }
+    51% { transform: translate(1px, 1px) rotate(-1deg); }
+    52% { transform: translate(-1px, -1px) rotate(1deg); }
+    53% { transform: translate(1px, 1px) rotate(0deg); }
+    54% { transform: translate(1px, -1px) rotate(-1deg); }
+    55% { transform: translate(0px, 0px) rotate(0deg); }
+}
+
+@keyframes bzzt {
+    70% { transform: scale(1.0) rotate(0deg); }
+    71% { transform: scale(1.1) rotate(1deg); }
+    72% { transform: scale(1.1) rotate(1deg); }
+    73% { transform: scale(1.1) rotate(0deg); }
+    74% { transform: scale(1.1) rotate(0deg); }
+    75% { transform: scale(1.1) rotate(0deg); }
+    76% { transform: scale(1.1) rotate(1deg); }
+    77% { transform: scale(1.1) rotate(1deg); }
+    78% { transform: scale(1.0) rotate(0deg); }
+
+}
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
