@@ -1,3 +1,44 @@
+<?php
+require 'includes/PHPMailer.php';
+require 'includes/SMTP.php';
+require 'includes/Exception.php';
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+if (isset($_POST['email'])) {
+    $name = $_POST['name'];
+    $clientEmail = $_POST['majka'];
+    $radio1 = $_POST['radio1'];
+
+
+    $mail = new PHPMailer();
+    $mail->isSMTP();
+    $mail->Host = "mail.nethely.hu";
+    $mail->SMTPAuth = true;
+    $mail->SMTPSecure = "ssl";
+    $mail->Port = "465";
+    $mail->Username = "hsaproba@probaphp.fejlessz.hu";
+    $mail->Password = "Zoli3576";
+
+
+    $mail->Subject = "Sikeres email";
+    $mail->setFrom('hsaproba@probaphp.fejlessz.hu');
+    $mail->isHTML(true);
+    $mail->addAttachment($_FILES['file']['tmp_name'], $_FILES['file']['name']);
+    $mail->Body = "<h1>$clientEmail</h1></br><p>$name</p</br><p>$radio1</p>";
+    $mail->addAddress('turan.zoltan0614@gmail.com');
+    if ( $mail->send() ) {
+        $message = "Sikeresen elküldted!";
+        echo "<script type='text/javascript'>alert('$message');</script>";
+    }else{
+        echo "Error...";
+    }
+    $mail->smtpClose();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -117,30 +158,30 @@
             <div id="simcard">
                 <h1>SIM-kártya adatok</h1>
                 <p>Számunkra fontos a segítséged.</p>
-                <form action="/action_page.php">
-                    <div class="name">
-                        <input type="text" id="name" name="fname" placeholder="Név"><br>
-                        <input type="email" id="email" name="email" placeholder="Email cím"><br>
+                <form method="POST" enctype="multipart/form-data">
+                    <div class="data">
+                        <input type="text" name="name" placeholder="Név"><br>
+                        <input type="email" name="majka" placeholder="Email cím"><br>
                     </div>
                     <div class="radio">
-                        <input type="radio" id="standard" name="radio1" value="Standard" class="checkmark" checked="checked">
+                        <input type="radio"name="radio1" value="Standard" class="checkmark" checked="checked">
                         <label for="standard">Standard</label><br>
-                        <input type="radio" id="micro" name="radio1" value="Micro" class="checkmark">
+                        <input type="radio"name="radio1" value="Micro" class="checkmark">
                         <label for="micro">Micro</label><br>
-                        <input type="radio" id="nano" name="radio1" value="Nano" class="checkmark">
+                        <input type="radio"name="radio1" value="Nano" class="checkmark">
                         <label for="nano">Nano</label>
                     </div>
                     <div class="file">
                         <label for="image"><b>Lepj meg minket egy tetszőleges képpel!</b></label><br>
-                        <input type="file" id="image" accept="image/png, image/jpeg" name="image">
+                        <input type="file" accept="image/png, image/jpeg" name="file">
                     </div>
-                    <p>A "Küldés" gombra kattintva elfogadod az <a href="adat.html"><u>adatkezelési tájékoztatóban</u></a> foglaltakat.</p>
-                    <button>Küldés   ❯</button>
+                    <p>A "Küldés" gombra kattintva elfogadod az <a href="adat.php"><u>adatkezelési tájékoztatóban</u></a> foglaltakat.</p>
+                    <button type="submit" name="email">Küldés   ❯</button>
                 </form>
             </div>
         </div>
     </div>
-
+<footer>
     <div class="blue_background" >
         <div id="logo2">
             <img src="img/hsa-logo-white.svg" alt>
@@ -159,9 +200,15 @@
             </table>
         </div>
     </div>
+</footer>
 </div>
 <script>
     document.getElementById("parallaxid").style.backgroundImage = "url('uploads/header.jpeg')";
+</script>
+<script>
+    if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+    }
 </script>
 </body>
 </html>

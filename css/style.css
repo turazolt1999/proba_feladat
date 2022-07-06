@@ -5,7 +5,6 @@ html {
 * {
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
-    height: 100%;
     box-sizing: border-box;
 }
 
@@ -26,7 +25,7 @@ nav {
     background-color: #00b26b;
     align-items: center;
     display: flex;
-    height: 90px;
+    height: auto;
     position: fixed;
     width: 100%;
     justify-content: center;
@@ -58,7 +57,7 @@ nav a:hover {
 }
 
 nav img{
-    width: 130px;
+    width: 120px;
 }
 
 /*Scrool*/
@@ -70,7 +69,6 @@ nav img{
 /*Parallax*/
 
 .parallax {
-    /*background-image: url("../uploads/header.jpeg");*/
     height: 95%;
 
     background-attachment: fixed;
@@ -91,7 +89,8 @@ nav img{
 
 .caption {
     margin: 0 20%;
-    padding-top: 30%;
+    padding-top: 28%;
+    padding-bottom: 8%;
     width: auto;
     color: #000;
     height: auto;
@@ -333,6 +332,7 @@ nav img{
     width: 100%;
     object-fit: cover;
     object-position: 0 55%;
+    height: 100%;
 }
 
 
@@ -346,14 +346,14 @@ nav img{
     font-size: 17px;
 }
 
-.name, .radio{
+.data, .radio{
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     margin: 25px 0;
 }
 
-.name input {
+.data input {
     vertical-align: middle;
     margin: 5px 60px 5px 0;
     padding: 15px;
@@ -415,11 +415,12 @@ nav img{
 }
 
 #ready {
-    margin-left: 25%;
+    margin-left: 23%;
 }
 
 #ready table {
     height: auto;
+    text-align: right;
 }
 
 #ready button {
@@ -434,6 +435,10 @@ nav img{
     color: #00b26b;
 }
 
+#ready table td {
+    color: white;
+    padding-right: 20px;
+}
 
 /*Animációk*/
 #bzzt {

@@ -17,11 +17,11 @@
     </div>
     <div class="list">
         <ul>
-            <li><a href="index.html#devicespoint">Készülékek</a></li>
-            <li><a href="index.html#topbrandspoint">Top márkák</a></li>
-            <li><a href="index.html#soundspoint">Ismerősen cseng?</a></li>
-            <li><a href="index.html#premiumpoint">Prémium lehetőségek</a></li>
-            <li><a href="index.html#simcardpoint">SIM-kártya adatok</a></li>
+            <li><a href="index.php#devicespoint">Készülékek</a></li>
+            <li><a href="index.php#topbrandspoint">Top márkák</a></li>
+            <li><a href="index.php#soundspoint">Ismerősen cseng?</a></li>
+            <li><a href="index.php#premiumpoint">Prémium lehetőségek</a></li>
+            <li><a href="index.php#simcardpoint">SIM-kártya adatok</a></li>
         </ul>
     </div>
 </nav>
