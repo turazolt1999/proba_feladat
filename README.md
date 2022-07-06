@@ -1,4 +1,4 @@
-# proba_feladat
+# proba_feladat saját megoldással
 
 A weboldal elérhető itt: http://probaphp.fejlessz.hu/<br>
 Admin felület: http://probaphp.fejlessz.hu/admin.php<br>
