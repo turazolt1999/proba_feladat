@@ -1,8 +1,8 @@
 # proba_feladat
 
-A weboldal elérhető itt: http://probaphp.fejlessz.hu/
-A feladatot HTML, PHP, CSS, JS környezetben készítettem el.
-XAMPP Localhostját (htdocs) deployoltam.
+A weboldal elérhető itt: http://probaphp.fejlessz.hu/<br>
+A feladatot HTML, PHP, CSS, JS környezetben készítettem el.<br>
+XAMPP Localhostját (htdocs) deployoltam.<br>
 
 
 # proba_feladat
