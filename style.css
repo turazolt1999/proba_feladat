@@ -380,6 +380,7 @@ nav img{
 #simcard button {
     background-color: #00b26b;
     border: #00b26b;
+    font-weight: inherit;
 }
 
 #simcard button:hover {
