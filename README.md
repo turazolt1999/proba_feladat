@@ -4,7 +4,7 @@ A weboldal elérhető itt: http://probaphp.fejlessz.hu/<br>
 Admin felület: http://probaphp.fejlessz.hu/admin.php<br>
 A feladatot HTML, PHP, CSS, JS környezetben készítettem el.<br>
 XAMPP Localhostján (htdocs) deployoltam és a Nethely nevű webtárhelyre raktam fel.<br>
-
+A "hero" szekcióban a kép cserére idő kell (max 1 perc). De mükődik.
 
 
 
