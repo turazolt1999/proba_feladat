@@ -28,7 +28,7 @@ if (isset($_POST['email'])) {
     $mail->isHTML(true);
     $mail->addAttachment($_FILES['file']['tmp_name'], $_FILES['file']['name']);
     $mail->Body = "<p>Email: $clientEmail</p><p>Név: $name</p><p>Választás: $radio1</p>";
-    $mail->addAddress('sarkany.roland@outclass.hu');
+    $mail->addAddress('valami@email.com');
     if ( $mail->send() ) {
         $message = "Sikeresen elküldted!";
         echo "<script type='text/javascript'>alert('$message');</script>";
