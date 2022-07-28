@@ -33,7 +33,7 @@ if (isset($_POST['email'])) {
         $message = "Sikeresen elküldted!";
         echo "<script type='text/javascript'>alert('$message');</script>";
     }else{
-        echo "Error...";
+        echo "Hiba...";
     }
     $mail->smtpClose();
 }
