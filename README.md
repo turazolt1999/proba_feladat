@@ -3,14 +3,6 @@
 A weboldal elérhető itt: http://probaphp.fejlessz.hu/<br>
 Admin felület: http://probaphp.fejlessz.hu/admin.php<br>
 A feladatot HTML, PHP, CSS, JS környezetben készítettem el.<br>
-XAMPP Localhostján (htdocs) deployoltam és a Nethely nevű webtárhelyre raktam fel.<br>
-A "hero" szekcióban a kép cserére idő kell (max 1 perc). De mükődik.
-
-
-
-# proba_feladat
-Feladat:
-proba-landing-2022.png alapján weboldal elkészítése tetszőleges eszközökkel, keretrendszerekkel.
 
 Részletek:
 - navbar fix, nem floatol görgetésre
@@ -30,8 +22,3 @@ Design:
 - Zöld #00b26b
 - Sötétkék #171b31
 - Sötét szürke (betűk) #202428
-
-Határidő:
-- július 06. 23:59 - sarkany.roland@outclass.hu-ra küldd el a github linket
-- könnyen deployolható legyen localhostra (leírás!!)
-- külön köszönöm, ha valamilyen tárhelyre te is deloyolod
