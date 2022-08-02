@@ -13,7 +13,7 @@ Részletek:
 - Prémium lehetőségek gomb az ezzel megegyező című szekcióra visz
 - Bzzt! Rrrrrrring! Ching Ching! hanfutánzó szavakra rezgő animáció X másodpercenként
 - Üres szekciónál rátok vagyunk kíváncsiak. Töltsétek ki úgy, hogy illeszkedjen az oldal stílusába. Ha egy jó szöveget is írtok hozzá az plusz pont.
-- Sim-kártya adatok szekció egy működő form kell legyen, az elküldött adat a sarkany.roland@outclass.hu-címre érkezzen (ne ezzel a címmel tesztelj!!!)
+- Sim-kártya adatok szekció egy működő form kell legyen, az elküldött adat a turan.zoltan0614@gmail.com-címre érkezzen (ne ezzel a címmel tesztelj!!!)
 - Footer gomb, felvisz az oldal tetejére
 - A hero és Prémium lehetőségek szekciók kapjanak parallaxot, lehetőleg ne ugyan olyan legyen mindkettő effektje.
 
